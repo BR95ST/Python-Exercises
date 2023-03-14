@@ -1,4 +1,4 @@
-class Stack():
+class Stack:
 	def __init__(self):
 		self.stack = []
 		self.len_stack = 0
@@ -25,16 +25,17 @@ class Stack():
 	def length(self):
 		return self.len_stack
 
-s = Stack()
+if __name__ == "__main__":
+	s = Stack()
 
-print(s.length())
-print(s.top())
-s.push(1)
-s.push(2)
-s.push(3)
-s.push(4)
-print(s.top())
-print(s.empty())
-s.pop()
-print(s.top())
-print(s.length())
+	print(s.length())
+	print(s.top())
+	s.push(1)
+	s.push(2)
+	s.push(3)
+	s.push(4)
+	print(s.top())
+	print(s.empty())
+	s.pop()
+	print(s.top())
+	print(s.length())
